@@ -1,0 +1,359 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+@font-face {
+    font-family: Buttershine Serif;
+    src: url('https://fonts.googleapis.com/css?family=Buttershine+Serif')
+}
+
+@font-face {
+    font-family: Mr Dafoe;
+    src: url('https://fonts.googleapis.com/css?family=Mr+Dafoe')
+}
+
+.header {
+    background-image: linear-gradient(180deg,  #4583ee, white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font: normal 10pt Buttershine Serif;
+    margin-right: 0px;
+}
+
+a#destaque {
+    background-color: #ff6309;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.menu {
+
+    display: flex;
+}
+
+.menu li {
+    margin-left: 0px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.btnMenu {
+    display: none;
+}
+
+.btnMenu div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+@media (max-width: 800px) {
+    #menu{display: none;}
+    .btnMenu{display: block;}
+}
+
+.menuOculto {
+    position: absolute;
+    border-radius: 100px;
+    display: none;
+    background-color: white;
+    width: 300px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    
+}
+
+.menuOculto a {
+    font-size: 15pt;
+    font-family: Buttershine Serif;
+    padding: 5px;
+    border-radius: 80px;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.menuOculto a:hover {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: Bungee;
+    background-color: #ff6309;
+}
+
+.sobreNós {
+    margin-left: 20px;
+}
+
+.lbox {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+
+}
+
+.lbox:target {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10,10,10,.7);
+    position: fixed;
+    display: block;
+}
+
+.box_img{
+    width: 300px;
+    margin: 150px auto;
+}
+
+.btn{
+    color: white;
+    font-family: 'Arial';
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#prev{
+    left: 5%;
+    top: 45%;
+}
+
+#next{
+    right: 5%;
+    top: 45%;
+}
+
+#close{
+    top: 0;
+    right: 2%;
+}
+
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.galeria > div {
+    flex: 1 1 300px;
+    margin: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+.galeria > div > p {
+    font: normal 18pt Buttershine Serif;
+    text-align: center;
+}
+
+.paragrafoBemVindo {
+    font: normal 18pt Buttershine Serif;
+}
+
+.btnCallToAction {
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    font: normal 20pt Buttershine Serif;
+    background-color: #4583ee;
+    border-radius: 100px;
+    border-style: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438);
+}
+
+.small_img{
+    cursor: pointer;
+    transition: all linear 0.4s;
+    margin-bottom: 15px;
+}
+
+
+div#backgroundGaleria {
+    background-image: linear-gradient(180deg, white, #ff6309);
+    align-items: center;
+}
+
+div#bemVindo {
+    margin-top: 0px;
+    text-align: center;
+}
+
+h1#tituloBemVindo {
+    font: normal 40pt Buttershine Serif; 
+}
+
+h2#callToAction {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    font: normal 30pt Buttershine Serif; 
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+div#transição {
+    height: 500px;
+    background-image: linear-gradient(180deg, #ff6309, white);
+    margin-top: 0px;
+    text-align: center;
+}
+
+footer {
+    font: normal 30pt Mr Dafoe;
+    height: 300px;
+    background-image: linear-gradient(180deg, white, #4583ee);
+    text-align: center;
+    margin-top: 200px;
+}
+
+/*Formulário:*/
+
+.formulario {
+    background-color: #e2e8ebf1;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 150px;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 5px 5px 10px #4583ee;
+    padding: 25px;
+    border-radius: 100px;
+}
+
+.formulario > h1 {
+    font: normal 25pt Buttershine Serif;
+    color: #ff6309;
+}
+
+.formulario > form > p {
+    font: normal 15pt Buttershine Serif;
+}
+
+.formulario > form > input {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 100px;
+    padding: 5px;
+    width: 200px;
+}
+
+.formulario > form > #btnCallToAction {
+    font-size: 15px;
+    background-color: #ff6309;
+    padding: 10px;
+}
+
+.formulario-artistas {
+    background-color: #e2e8ebf1;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 150px;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 5px 5px 10px #4583ee;
+    padding: 25px;
+    border-radius: 100px;
+}
+
+.formulario-artistas > h1 {
+    font: normal 25pt Buttershine Serif;
+    color: #4583ee;
+}
+
+.formulario-artistas > form > p {
+    font: normal 15pt Buttershine Serif;
+}
+
+.formulario-artistas > form > input {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 100px;
+    padding: 5px;
+    width: 200px;
+}
+
+.formulario-artistas > form > #btnCallToAction {
+    font-size: 15px;
+    background-color: #4583ee;
+    padding: 10px;
+}
+
+button#botãoWhatsapp{
+    background-image: url(/whatsapp.png);
+    padding: 30px;
+    width: 100px;
+    height: 105px;
+    border-radius: 100px;
+    border-style: none;
+
+}
+
+/*Obrigado*/
+
+.redesSociais {
+    display: flex;
+    max-width: 300px;
+    margin: auto;
+    justify-content: center;
+}
+
+#btnCallToAction:hover 
+
+{ background-color: #ff6309; 
+
+transition: 0.5s;
+
+opacity: 0.7;
+
+}
+
+#destaque:hover 
+
+{ background-color: black; 
+
+color: white;
+
+transition: 0.5s;
+
+opacity: 0.7;
+
+}
