@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luety Gallery</title>
+    <script src="/src/script.js"></script>
+    <link rel="stylesheet" href="src/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Buttershine+Serif" rel="stylesheet">
+  
+</head>
+<body>
+    <script src="src/script.js"></script>
+    <header class="header">
+        <a href="/"><img src="/logo.png" alt="logo" style="border-radius: 100%;"></a>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="/src/sobre.html"><strong>Sobre nós</strong></a></li>
+                <li><a href="/"><strong>Galeria</strong></a></li>
+                <li><a href="/src/formulario.html"><strong>Compre arte</strong></a></li>
+                <li><a href="/src/formulario-artistas.html" id="destaque"><strong>Venda sua arte</strong></a></li>
+                </li>
+            </ul>
+        </nav>
+        <div class="btnMenu" onclick="abrirMenu()" ondblclick="esconderMenu()" id="btnMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div id="menuOculto" class="menuOculto" onmouseleave="esconderMenu()">
+        <ul>
+            <li><a href="/src/sobre.html"><strong>Sobre nós</strong></a></li>
+            <li><a href="/"><strong>Galeria</strong></a></li>
+            <li><a href="/src/formulario.html"><strong>Compre arte</strong></a></li>
+            <li><a href="/src/formulario-artistas.html" id="destaque"><strong>Venda sua arte</strong></a></li>
+            </li>
+        </ul>
+        </ul>
+    </div>
+
+    
+  
+
+    <div id="bemVindo">
+        <h1 id="tituloBemVindo"><strong style="color: #4583ee;">Bem-vindos</strong> à nossa <strong style="color: #ff6309;">Galeria de Arte!</strong></h1>
+        <p class="paragrafoBemVindo">
+            Aqui você vai encontrar <strong style="color: #4583ee;">obras de arte originais</strong>, direto dos artistas ou ainda solicitar uma 100% personalizada para combinar com você e seu espaço.
+            <br>        Recebendo <strong style="color: #ff6309;">em sua casa</strong> sem complicações.
+        </p>
+    </div>
+    <div style="text-align: center; margin-bottom: 50px;">
+        <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+    </div>
+
+
+    <div class="lbox" id="img1">
+        <div class="box_img">
+            <a href="#img16" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Luzes da Cidade.jpg">
+            <a href="#img2" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img2">
+        <div class="box_img">
+            <a href="#img1" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Embarcações.jpg">
+            <a href="#img3" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img3">
+        <div class="box_img">
+            <a href="#img2" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/As Carpas.jpg">
+            <a href="#img4" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img4">
+        <div class="box_img">
+            <a href="#img3" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Isaias 43.13.jpg">
+            <a href="#img5" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img5">
+        <div class="box_img">
+            <a href="#img4" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Melhor Amigo.jpg">
+            <a href="#img6" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img6">
+        <div class="box_img">
+            <a href="#img5" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Maior Heroi.jpg">
+            <a href="#img7" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img7">
+        <div class="box_img">
+            <a href="#img6" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Santa Ceia.jpg">
+            <a href="#img8" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img8">
+        <div class="box_img">
+            <a href="#img7" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Tulipas.jpg">
+            <a href="#img9" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img9">
+        <div class="box_img">
+            <a href="#img8" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Os Cavalos.jpg">
+            <a href="#img10" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img10">
+        <div class="box_img">
+            <a href="#img9" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Cores Naturais.jpg">
+            <a href="#img11" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img11">
+        <div class="box_img">
+            <a href="#img10" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Timidez.jpg">
+            <a href="#img12" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img12">
+        <div class="box_img">
+            <a href="#img11" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Toureiro.jpg">
+            <a href="#img13" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img13">
+        <div class="box_img">
+            <a href="#img12" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Mar Maré.jpg">
+            <a href="#img14" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img14">
+        <div class="box_img">
+            <a href="#img13" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Brincante.jpg">
+            <a href="#img15" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img15">
+        <div class="box_img">
+            <a href="#img14" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Trio Vilarejo.jpeg">
+            <a href="#img16" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+
+    <div class="lbox" id="img16">
+        <div class="box_img">
+            <a href="#img15" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Guarás.jpg">
+            <a href="#img17" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img17">
+        <div class="box_img">
+            <a href="#img16" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Ponte São Francisco.jpg">
+            <a href="#img18" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+    <div class="lbox" id="img18">
+        <div class="box_img">
+            <a href="#img17" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Sem Limites.jpg">
+            <a href="#img19" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img19">
+        <div class="box_img">
+            <a href="#img18" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Trio Natalino.jpg">
+            <a href="#img20" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img20">
+        <div class="box_img">
+            <a href="#img19" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/A Muralha Da Natureza.jpeg">
+            <a href="#img21" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img21">
+        <div class="box_img">
+            <a href="#img20" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Era Do Gelo.jpeg">
+            <a href="#img22" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img22">
+        <div class="box_img">
+            <a href="#img21" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Estrada Da Vida.jpeg">
+            <a href="#img23" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img23">
+        <div class="box_img">
+            <a href="#img22" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Lírios Aquáticos.jpeg">
+            <a href="#img24" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img24">
+        <div class="box_img">
+            <a href="#img23" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Horizonte Azul.jpeg">
+            <a href="#img25" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img25">
+        <div class="box_img">
+            <a href="#img24" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Tulipas Lionete.jpg">
+            <a href="#img26" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img26">
+        <div class="box_img">
+            <a href="#img25" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/O Brinde.jpg">
+            <a href="#img27" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img27">
+        <div class="box_img">
+            <a href="#img26" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/O Lago Verde.jpg">
+            <a href="#img28" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img28">
+        <div class="box_img">
+            <a href="#img27" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Retângulo.jpg">
+            <a href="#img29" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img29">
+        <div class="box_img">
+            <a href="#img28" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/O Lago Azul.jpg">
+            <a href="#img30" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img30">
+        <div class="box_img">
+            <a href="#img29" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Tempo.jpg">
+            <a href="#img31" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img31">
+        <div class="box_img">
+            <a href="#img30" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Sinuca de Bico.jpeg">
+            <a href="#img32" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img32">
+        <div class="box_img">
+            <a href="#img31" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Palafitas Nobres.jpeg">
+            <a href="#img33" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img33">
+        <div class="box_img">
+            <a href="#img32" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Imersão.jpeg">
+            <a href="#img34" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img34">
+        <div class="box_img">
+            <a href="#img33" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Rua Dourada.jpeg">
+            <a href="#img35" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img35">
+        <div class="box_img">
+            <a href="#img34" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Alegria da Luz.jpeg">
+            <a href="#img36" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img36">
+        <div class="box_img">
+            <a href="#img35" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Show Women.jpg">
+            <a href="#img37" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img37">
+        <div class="box_img">
+            <a href="#img36" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/A Dor de Maria.jpg">
+            <a href="#img38" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img38">
+        <div class="box_img">
+            <a href="#img37" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Docilidade.jpg">
+            <a href="#img39" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img39">
+        <div class="box_img">
+            <a href="#img38" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/São Miguel Arcanjo.jpg">
+            <a href="#img40" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img40">
+        <div class="box_img">
+            <a href="#img39" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Êxtase.jpg">
+            <a href="#img41" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img41">
+        <div class="box_img">
+            <a href="#img40" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Sintonia I.jpg">
+            <a href="#img42" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img42">
+        <div class="box_img">
+            <a href="#img41" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Sintonia II.jpg">
+            <a href="#img43" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img43">
+        <div class="box_img">
+            <a href="#img42" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Sintonia III.jpg">
+            <a href="#img44" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img44">
+        <div class="box_img">
+            <a href="#img43" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Leitora na Praia Grande.jpg">
+            <a href="#img45" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div class="lbox" id="img45">
+        <div class="box_img">
+            <a href="#img44" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/A Beira Mar.jpg">
+            <a href="#img46" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    
+    <div class="lbox" id="img46">
+        <div class="box_img">
+            <a href="#img45" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/Nevoada De Cores.jpg">
+            <a href="#img47" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+    
+    <div class="lbox" id="img47">
+        <div class="box_img">
+            <a href="#img46" class="btn" id="prev">&#171;</a>
+            <a href="" class="btn" id="close">X</a>
+            <img src="/galeria/O Naufrágio.jpg">
+            <a href="#img1" class="btn" id="next">&#187;</a>
+        </div>
+    </div>
+
+    <div id="backgroundGaleria">
+        <h2 id="callToAction"><strong style="color: #ff6309;">Dê uma olhada nas nossas últimas obras:</strong></h2>
+
+        <section class="galeria">
+            
+            <div class="card_img">
+                <a href="#img1"><img src="/galeria/Luzes da Cidade.jpg" class="small_img"></a>
+                <p>"Luzes da Cidade"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 1.23x55 // Tec.: OST</p>
+                <p>R$780,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+            </div>
+
+            <div class="card_img">
+                <a href="#img2"><img src="/galeria/Embarcações.jpg" class='small_img'></a>
+                <p>"Embarcações"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 1,20x60 // Tec.: OST</p> 
+                <p>R$960,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+            </div>
+
+            <div class="card_img">
+                <a href="#img3"><img src="/galeria/As Carpas.jpg" class="small_img"></a>
+                <p>"As Carpas"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 1.00x40 // Tec.: OST</p>
+                <p>R$860</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div class="card_img">
+                <a href="#img4"><img src="/galeria/Isaias 43.13.jpg" class="small_img"></a>
+                <p>"Isaías 43:13"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 60x40 // Tec.: OST</p>
+                <p>R$780</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div class="card_img">
+                <a href="#img5"><img src="/galeria/Melhor Amigo.jpg" class="small_img"></a>
+                <p>"Melhor Amigo"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: // Tec.: OST</p>
+                <p>R$560,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div class="card_img">
+                <a href="#img6"><img src="/galeria/Maior Heroi.jpg" class="small_img"></a>
+                <p>"Maior Herói"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 60x40 // Tec.: OST</p>
+                <p>R$790,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div class="card_img">
+                <a href="#img7"><img src="/galeria/Santa Ceia.jpg" class="small_img"></a>
+                <p>"Santa Ceia"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 1.10x70 // Tec.: Mista</p>
+                <p>R$1.600,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div class="card_img">
+                <a href="#img8"><img src="/galeria/Tulipas.jpg" class="small_img"></a>
+                <p>"Tulipas"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 80x60 // Tec.: OST</p>
+                <p>R$1.200,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img9"><img src="/galeria/Os Cavalos.jpg" class="small_img"></a>
+                <p>"Os Cavalos"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 80x60 // Tec.: OST</p>
+                <p>R$1.100,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img10"><img src="/galeria/Cores Naturais.jpg" class="small_img"></a>
+                <p>"Cores Naturais"</p>
+                <p>Art.: Messias F.Silva</p>
+                <p>Dim.: 40x45 // Tec.: OST</p>
+                <p>R$490,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img11"><img src="/galeria/Timidez.jpg" class="small_img"></a>
+                <p>"Timidez"</p>
+                <p>Art.: Emílio Josino</p>
+                <p>Dim.: 80x60 // Tec.: OST</p>
+                <p>R$980,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img12"><img src="/galeria/Toureiro.jpg" class="small_img"></a>
+                <p>"Toureiro"</p>
+                <p>Art.: Osvaldo júnior</p>
+                <p>Dim.: 60x80 // Tec.: OST</p>
+                <p>R$780,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img13"><img src="/galeria/Mar Maré.jpg" class="small_img"></a>
+                <p>"Mar Maré"</p>
+                <p>Art.: Clair B.</p>
+                <p>Dim.: 98x68 // Tec.: OST</p>
+                <p>R$680,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img14"><img src="/galeria/Brincante.jpg" class="small_img"></a>
+                <p>"Brincante"</p>
+                <p>Art.: Osvaldo Júnior</p>
+                <p>Dim.: 60x40 // Tec.: OST</p>
+                <p>R$560,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img15"><img src="/galeria/Trio Vilarejo.jpeg" class="small_img"></a>
+                <p>"Trio vilarejo"</p>
+                <p>Art.: Matheus Carvalho</p>
+                <p>Dim.: 3x30x24 // Tec.: OST</p>
+                <p>R$490,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img16"><img src="/galeria/Guarás.jpg" class="small_img"></a>
+                <p>"Guarás"</p>
+                <p>Art.: Osvaldo júnior</p>
+                <p>Dim.: 50x30 // Tec.: OST</p>
+                <p>R$490,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img17"><img src="/galeria/Ponte São Francisco.jpg" class="small_img"></a>
+                <p>"Ponte São Francisco"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 70x50 // Tec.: OST</p>
+                <p>R$980,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+
+            </div>
+
+            <div>
+                <a href="#img18"><img src="/galeria/Sem Limites.jpg" class="small_img"></a>
+                <p>"Sem Limites"</p>
+                <p>Art.: Matheus Carvalho</p>
+                <p>Dim.: 70x50 // Tec.: OST</p>
+                <p>R$760,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>            
+
+            <div>
+                <a href="#img19"><img src="/galeria/Trio Natalino.jpg" class="small_img"></a>
+                <p>"Trio Natalino"</p>
+                <p>Art.: Luety Rodrigues</p>
+                <p>Dim.: 3x12x22 // Tec.: OST</p>
+                <p>R$360,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img20"><img src="/galeria/A Muralha Da Natureza.jpeg" class="small_img"></a>
+                <p>"A Muralha Da Natureza"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 90x80 // Tec.: OST</p>
+                <p>R$620,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img21"><img src="/galeria/Era Do Gelo.jpeg" class="small_img"></a>
+                <p>"Era Do Gelo"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 1.00x70 // Tec.: OST</p>
+                <p>R$680,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img22"><img src="/galeria/Estrada Da Vida.jpeg" class="small_img"></a>
+                <p>"Estrada Da Vida"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 1.30x80 // Tec.: Espatulado OST</p>
+                <p>R$900,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img23"><img src="/galeria/Lírios Aquáticos.jpeg" class="small_img"></a>
+                <p>"Lírios Aquáticos"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 1.20x70 // Tec.: OST</p>
+                <p>R$980,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img24"><img src="/galeria/Horizonte Azul.jpeg" class="small_img"></a>
+                <p>"Horizonte Azul"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 90x80 // Tec.: OST</p>
+                <p>R$680,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img25"><img src="/galeria/Tulipas Lionete.jpg" class="small_img"></a>
+                <p>"Tulipas"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 117x80 // Tec.: Espatulado OST</p>
+                <p>R$830,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img26"><img src="/galeria/O Brinde.jpg" class="small_img"></a>
+                <p>"O Brinde"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 90x80 // Tec.: Espátula OST</p>
+                <p>R$380,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img27"><img src="/galeria/O Lago Verde.jpg" class="small_img"></a>
+                <p>"O Lago Verde"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 80x60 // Tec.: OST</p>
+                <p>R$630,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img28"><img src="/galeria/Retângulo.jpg" class="small_img"></a>
+                <p>"Retângulo"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 90x70 // Tec.: Espatulado OST</p>
+                <p>R$430,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img29"><img src="/galeria/O Lago Azul.jpg" class="small_img"></a>
+                <p>"O Lago Azul"</p>
+                <p>Art.: Lionete Ladeira</p>
+                <p>Dim.: 1.10x80 // Tec.: Espatulado OST</p>
+                <p>R$790,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img30"><img src="/galeria/Tempo.jpg" class="small_img"></a>
+                <p>"Tempo"</p>
+                <p>Art.: Osvaldo Junior</p>
+                <p>Dim.: 1.20x70 // Tec.: OST</p>
+                <p>R$1.160,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img31"><img src="/galeria/Sinuca de Bico.jpeg" class="small_img"></a>
+                <p>"Sinuca de Bico"</p>
+                <p>Art.: Orlando Pereira Lima</p>
+                <p>Dim.: 70x1.10  // Tec.: OST</p>
+                <p>R$1.500,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img32"><img src="/galeria/Palafitas Nobres.jpeg" class="small_img"></a>
+                <p>"Palafitas Nobres "</p>
+                <p>Art.: Orlando Pereira Lima</p>
+                <p>Dim.: 50x45 // Tec.: OST</p>
+                <p>R$700,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img33"><img src="/galeria/Imersão.jpeg" class="small_img"></a>
+                <p>"Imersão"</p>
+                <p>Art.: Orlando Pereira Lima</p>
+                <p>Dim.: 1,50x1,45 // Tec.: AST</p>
+                <p>R$1.900,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img34"><img src="/galeria/Rua Dourada.jpeg" class="small_img"></a>
+                <p>"Rua Dourada"</p>
+                <p>Art.: Orlando Pereira Lima</p>
+                <p>Dim.: 40x50 // Tec.: OST</p>
+                <p>R$800,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img35"><img src="/galeria/Alegria da Luz.jpeg" class="small_img"></a>
+                <p>"Alegria da Luz"</p>
+                <p>Art.: Orlando Pereira Lima</p>
+                <p>Dim.: 50x45 // Tec.: OST</p>
+                <p>R$700,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img36"><img src="/galeria/Show Women.jpg" class="small_img"></a>
+                <p>"Show Women"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 80x60 // Tec.: Aguada de Acrílica</p>
+                <p>R$2.200,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img37"><img src="/galeria/A Dor de Maria.jpg" class="small_img"></a>
+                <p>"A Dor de Maria"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 100x120 // Tec.: Acrílica s/tela</p>
+                <p>R$2.400,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img38"><img src="/galeria/Docilidade.jpg" class="small_img"></a>
+                <p>"Docilidade"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 80x100 // Tec.: Acrílica/Tela (Reprodução em Canvas)</p>
+                <p>R$1.000,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img39"><img src="/galeria/São Miguel Arcanjo.jpg" class="small_img"></a>
+                <p>"São Miguel Arcanjo"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 80x100 // Tec.: Acrílica s/tela</p>
+                <p>R$2.200,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img40"><img src="/galeria/Êxtase.jpg" class="small_img"></a>
+                <p>"Êxtase"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 50x70 // Tec.: Acrílica s/tela (Reprodução em Canvas)</p>
+                <p>R$1.000,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img41"><img src="/galeria/Sintonia I.jpg" class="small_img"></a>
+                <p>"Sintonia I"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 80x100 // Tec.: Acrílica s/tela (Reprodução em Canvas)</p>
+                <p>R$1.000,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img42"><img src="/galeria/Sintonia II.jpg" class="small_img"></a>
+                <p>"Sintonia II"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 80x60 // Tec.: Acrílica s/tela (Reprodução em Canvas)</p>
+                <p>R$1.000,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img43"><img src="/galeria/Sintonia III.jpg" class="small_img"></a>
+                <p>"Sintonia III"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 80x60 // Tec.: Acrílica s/tela (Reprodução em Canvas)</p>
+                <p>R$1.000,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img44"><img src="/galeria/Leitora na Praia Grande.jpg" class="small_img"></a>
+                <p>"Leitora na Praia Grande"</p>
+                <p>Art.: Sônia Muniz</p>
+                <p>Dim.: 80x100 // Tec.: Acrílica s/tela (Reprodução em Canvas)</p>
+                <p>R$1.000,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img45"><img src="/galeria/A Beira Mar.jpg" class="small_img"></a>
+                <p>"Á Beira Mar"</p>
+                <p>Art.: Flávia Nicolau</p>
+                <p>Dim.: 76x76 // Tec.: O.S.T</p>
+                <p>R$400,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img46"><img src="/galeria/Nevoada De Cores.jpg" class="small_img"></a>
+                <p>"Nevoada De Cores"</p>
+                <p>Art.: William Martins</p>
+                <p>Dim.: 1,20x70 // Tec.: O.S.T</p>
+                <p>R$500,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+
+            <div>
+                <a href="#img47"><img src="/galeria/O Naufrágio.jpg" class="small_img"></a>
+                <p>"O Naufrágio"</p>
+                <p>Art.: Flávia Nicolau</p>
+                <p>Dim.: 60x90 // Tec.: O.S.T</p>
+                <p>R$700,00</p>
+                <a href="/src/formulario.html"><button id="btnCallToAction" class="btnCallToAction" onmouseenter="mudarCor()" onmouseout="voltarCor()">Adquira já</button></a>
+
+            </div>
+            
+
+
+        </section>
+    </div>
+
+
+
+    <div id="transição">
+    </div>
+
+
+    <footer>&copy;Luety Gallery</footer>
+</body>
+</html>

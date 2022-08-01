@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="formulario">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se como Artista</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Buttershine+Serif" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        angular.module("formulario", [])
+        angular.module("formulario").controller("formularioCtrl", function($scope) {
+            
+        }) 
+    </script>
+</head>
+<body ng-controller="formularioCtrl">
+    <script src="script.js"></script>
+    <header class="header">
+        <a href="/"><img src="/logo.png" alt="logo" style="border-radius: 100%;"></a>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="/src/sobre.html"><strong>Sobre nós</strong></a></li>
+                <li><a href="/"><strong>Galeria</strong></a></li>
+                <li><a href="/src/formulario.html"><strong>Compre arte</strong></a></li>
+                <li><a href="/src/formulario-artistas.html" id="destaque"><strong>Venda sua arte</strong></a></li>
+            </ul>
+        </nav>
+        <div class="btnMenu" onclick="abrirMenu()" ondblclick="esconderMenu()" id="btnMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div id="menuOculto" class="menuOculto" onmouseleave="esconderMenu()">
+        <ul>
+            <li><a href="/src/sobre.html"><strong>Sobre nós</strong></a></li>
+            <li><a href="/"><strong>Galeria</strong></a></li>
+            <li><a href="/src/formulario.html"><strong>Compre arte</strong></a></li>
+            <li><a href="/src/formulario-artistas.html" id="destaque"><strong>Venda sua arte</strong></a></li>
+            </li>
+        </ul>
+        </ul>
+    </div>
+
+    
+
+    <section class="formulario-artistas">
+        <h1>Cadastre sua arte na <strong>ART Luety Gallery</strong> preenchendo os campos abaixo:</h1>
+        <form action="https://api.staticforms.xyz/submit" method="POST" name="contatoForm">
+            <input type="hidden" name="accessKey" value="a4f01c72-cc31-402e-8231-a1cb208f2459">
+            <p>Digite seu nome:</p>
+            <input type="text" id="nome" name="name" ng-model="nome" ng-required="true" ng-minlength="3" ng-maxlength="70" required>
+            <p>Digite seu telefone:</p>
+            <input type="number" id="telefone" name="phone" ng-model="telefone" ng-required="true" ng-minlength="8" ng-maxlength="15" required>
+            <p>Digite seu email:</p>
+            <input type="email" id="email" name="email" ng-model="email" ng-required="true" required>
+            <input type="hidden" name="subject" value="NOVO CADASTRO DE ARTISTA" />
+            <input type="hidden" name="redirectTo" value="https://art-luety-gallery.vercel.app/src/obrigado.html">
+            <br>
+            <input type="submit" id="btnCallToAction" value="Adquira Já" ng-disabled="contatoForm.$invalid" onmouseenter="mudarCor()"/>
+        </form>
+        <br>
+        <h1>Ou chame a gente no whatsapp clicando no ícone abaixo:</h1>
+        👉<a href="https://api.whatsapp.com/send?phone=5598987332997&text=Ol%C3%A1!%20Tenho%20interesse%20em%20vender%20arte%20na%20ART%20Luety%20Gallery%20%3AD"><button id="botãoWhatsapp"></button></a>👈
+    </section>
+
+    <footer>&copy;Luety Gallery</footer>
+</body>
+</html>
